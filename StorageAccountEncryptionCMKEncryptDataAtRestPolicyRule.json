@@ -1,0 +1,17 @@
+{
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Storage/storageAccounts/encryptionScopes"
+          },
+          {
+            "field": "Microsoft.Storage/storageAccounts/encryptionScopes/source",
+            "notEquals": "Microsoft.Keyvault"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }

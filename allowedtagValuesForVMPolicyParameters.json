@@ -1,0 +1,29 @@
+{
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the audit policy"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Audit"
+      },
+      "tagName": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Tag Name",
+          "description": "Name of the tag, such as 'environment'"
+        }
+      },
+      "listofallowedtagValues": {
+        "type": "Array",
+        "metadata": {
+          "displayName": "Tag Values",
+          "description": "Value of the tag, such as 'production'"
+        } 
+      }
+    }
